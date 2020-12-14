@@ -23,3 +23,23 @@ export const CHATS = gql`
     }
   }
 `;
+
+export const ROOM = gql`
+  query ($room_id: uuid = "") {
+    rooms(where: {id: {_eq: $room_id}}) {
+      id
+      room_image
+      name
+      messages {
+        id
+        msg_text
+        msg_timestamp
+        user {
+          avatar
+          id
+          username
+        }
+      }
+    }
+  }
+`;

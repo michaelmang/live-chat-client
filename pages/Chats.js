@@ -30,7 +30,7 @@ export default function Chats({ user_id }) {
       <ScrollView
         style={tailwind(`h-full w-full p-4 flex flex-col bg-white`)}
       >
-        <Text style={tailwind(`text-lg text-black font-bold mt-2`)}>
+        <Text style={tailwind(`text-lg text-black font-bold my-2`)}>
           Messages
         </Text>
         {data.users[0].user_rooms.map((props, idx) => {
