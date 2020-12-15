@@ -26,7 +26,7 @@ const shapeToGiftedChatMessage = (message) => {
   };
 };
 
-export default function Room({ match, user_id }) {
+export default function Room({ match, user }) {
   const { room_id } = match.params;
   
   const { loading, data, refetch } = useQuery(ROOM, {
@@ -57,7 +57,7 @@ export default function Room({ match, user_id }) {
       </View>
       <GiftedChat
         messages={messages.map(shapeToGiftedChatMessage)}
-        user={{ _id: user_id }}
+        user={{ _id: user.id }}
       />
     </View>
   );
