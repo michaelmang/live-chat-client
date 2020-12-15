@@ -25,6 +25,7 @@
         "backgroundColor": "#FFFFFF"
       }
     },
+    "scheme": "live-chat-client",
     "web": {
       "favicon": "./assets/favicon.png",
       "build": {
