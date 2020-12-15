@@ -43,7 +43,7 @@ export default function Room({ match, user_id }) {
   const { messages, name, room_image } = rooms[0];
 
   return (
-    <View style={tailwind(`h-full w-full flex flex-col bg-white`)}>
+    <View style={tailwind(`h-full w-full flex flex-col bg-white pt-10`)}>
       <View
         style={tailwind(
           `w-full flex flex-row items-center justify-start py-6 px-8`
